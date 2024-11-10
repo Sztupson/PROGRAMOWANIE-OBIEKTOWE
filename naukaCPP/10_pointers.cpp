@@ -46,6 +46,14 @@ int main() {
     
     std::cout << "Value: " << *p_int2 << std::endl; // Dereferencing a pointer
     
+  
+
+
+    int zmienna = 56;
+    int* ptr;
+    ptr = &zmienna;
+    
+    std::cout << *ptr << std::endl;
     
     return 0;
 }
