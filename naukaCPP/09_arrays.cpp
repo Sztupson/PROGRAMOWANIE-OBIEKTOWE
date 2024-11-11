@@ -29,8 +29,6 @@ std::cout << "-------------------------- "<< std::endl;
 std::cout << "sizeof(class_sizes) " << sizeof(class_sizes) << std::endl;
 std::cout << "sizeof(class_sizes[0]) " << sizeof(class_sizes[0]) << std::endl;
 
-
-
 int count {sizeof(class_sizes)/sizeof(class_sizes[0])};
 for(size_t i = 0; i < count; i++){
     std::cout << "class_sizes [" << i << "] : " << class_sizes[i] << std::endl;
