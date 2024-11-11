@@ -13,7 +13,7 @@ int main() {
     int b = 50;
 
     int result = sum(a, b);
-    std::cout << "Out : &result(int)  " << &result << std::endl;
+    std::cout << "Out : &result(int)  " << &result << std::endl; // kopia
     std::cout << "Sum : " << result << std::endl;
 
     return 0;
