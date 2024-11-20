@@ -10,7 +10,7 @@ public:
         *p_age = _p_age;
         std::cout << "Wywolano konstruktor dla: " << name << std::endl;
     }
-    ~Dog() {
+    ~Dog() { 
         delete p_age;
         std::cout << "Wywolano destruktor dla: " << name << std::endl;
     }; // destructor declared

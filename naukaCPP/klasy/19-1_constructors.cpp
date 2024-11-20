@@ -2,7 +2,7 @@
 #include <cmath>
 
 /* 
- - Konstruktor nie ma typu return
+ - Konstruktor nie ma typu return 
  - Ma taką samą nazwę jak klasa
  - Może posiadać parametry (ale może być również pusty)
  - Używany często, aby zainicjalizować zmienne klasy

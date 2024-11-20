@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 
-class Cylinder {
+class Cylinder { 
 public: // jeżeli nie ma public, wszystko przypisywane jest jako
         // private, przez co nie mozna dostać się do tych
         // funkcji w int main

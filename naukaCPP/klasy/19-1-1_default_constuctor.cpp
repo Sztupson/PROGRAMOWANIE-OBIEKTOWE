@@ -9,7 +9,7 @@ public:
         konstruktor, ale chcemy skorzystać z takiego jaki program
         by utworzył jeżeli nie zdefiniowalibyśmy żadnego konstruktora
         */
-
+ 
 
     Cylinder(double _base_radius, double _height)
             : base_radius(_base_radius), height(_height) {
