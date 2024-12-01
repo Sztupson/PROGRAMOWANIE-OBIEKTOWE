@@ -7,7 +7,7 @@ int main() {
     bool c {true};
 
     std::boolalpha;
-
+    // || operator "or", && operator "i"
     std::cout << "a && b : " << (a && b) << std::endl;
     std::cout << "a && c : " << (a && c) << std::endl;
     std::cout << "a && b && c : " << (a && b && c) << std::endl;
