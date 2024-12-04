@@ -22,11 +22,16 @@ private:
     int* p_age;
 };
 
-void some_func(Dog _dog) {}
+void some_func() {
+    Dog* p_dog = new Dog("Fluffy", "Shepherd", 2);
+    
+    delete p_dog;
+}
 
 int main() {  
-    Dog dog("Fluffy", "Shepherd", 2);
-    some_func(dog);
+    //Dog dog("Fluffy", "Shepherd", 2);
+
+    some_func();
     
     std::cout << "Done" << std::endl;
     return 0;
