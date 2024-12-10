@@ -27,6 +27,7 @@ public:
 
 
     void showTasks(){
+        if(tasks.empty()) {std::cout << "Brak zadan do wyswietlenia.\n";}
         for (auto task : tasks) {
             std::cout << "[" << task.id << "] " << task.name << ":\n"
                       << task.desc << "\n" << "(Priorytet: " << task.priority
@@ -68,7 +69,7 @@ void displayMenu() {
                   << "Wybierz opcje: ";
 }
 
-main() {
+int main() {
     TaskManager manager;
     int choice = 0;
     
@@ -81,10 +82,17 @@ main() {
             std::string name;
             std::string desc;
             int priority;
+
+
             std::cout << "Podaj nazwe zadania: ";
+            //std::cin >> name;
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             std::getline(std::cin, name);
+
             std::cout << "Podaj opis zadania: ";
+
             std::getline(std::cin, desc);
+            
 
             while (true) {
             std::cout << "Podaj priorytet (0-3): ";
