@@ -1,140 +1,120 @@
-#include <fcntl.h>
-#include <sys/mman.h>
-#include <unistd.h>
-#include <sys/wait.h>
-#include <string.h>
-#include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/mman.h>
+#include <pthread.h>
+#include <sys/stat.h>
+#include <sys/wait.h>
+#include <string.h>
+#include <errno.h>
 
+#define DIGIT_COUNT 10 // 1234567890
 
-void count_digits(char* start, size_t length, struct context* shared_ctx) {
+typedef struct shared {
+    unsigned long count[DIGIT_COUNT];
+    pthread_mutex_t mutex;
+} shared_t;
+
+void count_digits(const char *data, size_t start, size_t end, shared_t *shared_context) {
     unsigned long local_count[DIGIT_COUNT] = {0};
 
-    for (size_t i = 0; i < length; ++i) {
-        if (start[i] >= '0' && start[i] <= '9') {
-            local_count[start[i] - '0']++;
-        }
+    for (size_t i = start; i < end; i++) {
+        if (data[i] >= '0' && data[i] <= '9') { local_count[data[i] - '0']++; }
     }
 
-    pthread_mutex_lock(&shared_ctx->mutex);
-    for (int i = 0; i < DIGIT_COUNT; ++i) {
-        shared_ctx->count[i] += local_count[i];
+    pthread_mutex_lock(&shared_context->mutex);
+    for (int i = 0; i < DIGIT_COUNT; i++) {
+        shared_context->count[i] += local_count[i];
     }
-    pthread_mutex_unlock(&shared_ctx->mutex);
+    pthread_mutex_unlock(&shared_context->mutex);
 }
 
-
-int main(int argc, char* argv[]) {
-    if (argc != 3) {
-        fprintf(stderr, "Usage: %s <file_path> <process_count>\n", argv[0]);
-        return 1;
-    }
+int main(int argc, char* argv[2]) {
+    struct stat statbuf;
+    if (argc != 3) { fprintf(stderr, "Wrong program input.\n", argv[0]); return 1; }
 
     const char* file_path = argv[1];
     int process_count = atoi(argv[2]);
-    if (process_count < 1) {
-        fprintf(stderr, "Process count must be at least 1.\n");
-        return 1;
-    }
+
+    if (process_count < 1) { fprintf(stderr, "Processes have to be >=1\n"); return 1; }
 
     int fd = open(file_path, O_RDONLY);
-    if (fd == -1) {
-        perror("Error opening file");
-        return 1;
-    }
+    if (fd == -1) { perror("Cannot open file"); return 1; }
 
-    size_t file_size = lseek(fd, 0, SEEK_END);
-    lseek(fd, 0, SEEK_SET);
-
-    char* file_data = (char*)mmap(NULL, file_size, PROT_READ, MAP_PRIVATE, fd, 0);
-    if (file_data == MAP_FAILED) {
-        perror("Error mapping file");
+    if (fstat(fd, &statbuf) == -1) {
+        perror("Failed to get file stats");
         close(fd);
         return 1;
+    }
+    printf("File size: %ld bytes\n", statbuf.st_size);
+
+    char *content = mmap(NULL, statbuf.st_size, PROT_READ, MAP_SHARED, fd, 0);
+    if (content == MAP_FAILED) { 
+        perror("Failed to mmap file"); 
+        close(fd); 
+        return 1; 
     }
 
     close(fd);
 
-    int shm_fd = shm_open("/shared_ctx", O_CREAT | O_RDWR, 0666);
-    if (shm_fd == -1) {
-        perror("Error creating shared memory");
-        munmap(file_data, file_size);
+    int prot = PROT_READ | PROT_WRITE;
+    int vis = MAP_SHARED | MAP_ANONYMOUS;
+    shared_t *shared_context = mmap(NULL, sizeof(shared_t), prot, vis, -1, 0);
+    if (shared_context == MAP_FAILED) {
+        perror("Failed to mmap shared context");
+        munmap(content, statbuf.st_size);
         return 1;
     }
 
-    size_t shm_size = sizeof(struct context);
-    if (ftruncate(shm_fd, shm_size) == -1) {
-        perror("Error setting shared memory size");
-        perror("Error setting shared memory size");
-        shm_unlink("/shared_ctx");
-        munmap(file_data, file_size);
-        return 1;
-    }
-
-    context* shared_ctx = (context*)mmap(NULL, shm_size, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
-    if (shared_ctx == MAP_FAILED) {
-        perror("Error mapping shared memory");
-        shm_unlink("/shared_ctx");
-        munmap(file_data, file_size);
-        return 1;
-    }
-
-    memset(shared_ctx->count, 0, sizeof(shared_ctx->count));
-    pthread_mutexattr_t mutex_attr;
-    pthread_mutexattr_init(&mutex_attr);
-    pthread_mutexattr_setpshared(&mutex_attr, PTHREAD_PROCESS_SHARED);
-    pthread_mutex_init(&shared_ctx->mutex, &mutex_attr);
-
-    size_t chunk_size = file_size / process_count;
-    pid_t pids[process_count];
-
-    for (int i = 0; i < process_count; ++i) {
-        size_t start = i * chunk_size;
-        size_t length = (i == process_count - 1) ? file_size - start : chunk_size;
-
-        if ((pids[i] = fork()) == 0) {
-            count_digits(file_data + start, length, shared_ctx);
-            munmap(file_data, file_size);
-            munmap(shared_ctx, shm_size);
-            exit(0);
-        }
-    }
-
-    for (int i = 0; i < process_count; ++i) {
-        waitpid(pids[i], nullptr, 0);
-    }
-
-    shared_t *shr = (shared_t*)mmap(NULL, sizeof(shared_t), PROT_READ | PROT_WRITE, MAP_SHARED | MAP_ANONYMOUS, -1, 0);
-    if (shr == NULL)
-        return -1;
+    memset(shared_context->count, 0, sizeof(shared_context->count));
 
     pthread_mutexattr_t mutexattr;
-    if (pthread_mutexattr_init(&mutexattr) != 0)
-        return -2;
-    if (pthread_mutexattr_setpshared(&mutexattr, PTHREAD_PROCESS_SHARED) != 0)
-        return -3;
-    if (pthread_mutex_init(&shr->mutex, &mutexattr) != 0)
-        return -4;
-
-    pid_t pid = fork();
-    switch (pid) {
-        case -1: /* coś poszło nie tak */
-            return -5;
-        case 0: /* jesteśmy w nowym procesie */
-            child(shr);
-            break;
-        default: /* jesteśmy w starym procesie */
-            parent(shr);
-            break;
+    if (pthread_mutexattr_init(&mutexattr) != 0 ||
+        pthread_mutexattr_setpshared(&mutexattr, PTHREAD_PROCESS_SHARED) != 0 ||
+        pthread_mutex_init(&shared_context->mutex, &mutexattr) != 0) {
+        perror("Failed to initialize mutex");
+        munmap(content, statbuf.st_size);
+        munmap(shared_context, sizeof(shared_t));
+        return 1;
     }
 
-    pthread_mutex_destroy(&shr->mutex);
-    pthread_mutex_destroy(&shared_ctx->mutex);
-    munmap(shr, sizeof(shared_t));
-    munmap(shared_ctx, shm_size);
-    shm_unlink("/shared_ctx");
-    munmap(file_data, file_size);
+    size_t chunk_size = statbuf.st_size / process_count;
+    size_t remainder = statbuf.st_size % process_count;
 
-    return 0;
+    pid_t pids[process_count];
+
+    for (int i = 0; i < process_count; i++) {
+        size_t start = i * chunk_size;
+        size_t end = (i == process_count - 1) ? (start + chunk_size + remainder) : (start + chunk_size);
+
+        pid_t pid = fork();
+        if (pid == -1) {
+            perror("Failed to fork process");
+            munmap(content, statbuf.st_size);
+            munmap(shared_context, sizeof(shared_t));
+            return 1;
+        }
+
+        if (pid == 0) {
+            count_digits(content, start, end, shared_context);
+            munmap(content, statbuf.st_size);
+            munmap(shared_context, sizeof(shared_t));
+            exit(0);
+        } else { pids[i] = pid; }
+    }
+
+    for (int i = 0; i < process_count; i++) {
+        waitpid(pids[i], NULL, 0);
+    }
+
+    for (int i = 0; i < DIGIT_COUNT; i++) {
+        printf("Digit %d: %lu\n", i, shared_context->count[i]);
+    }
+
+    pthread_mutex_destroy(&shared_context->mutex);
+    munmap(shared_context, sizeof(shared_t));
+    munmap(content, statbuf.st_size);
+
+    return 1;
 }
