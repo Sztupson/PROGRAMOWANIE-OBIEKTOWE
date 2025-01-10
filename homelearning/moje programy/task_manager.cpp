@@ -27,8 +27,12 @@ public:
 
 
     void showTasks(){
+<<<<<<< HEAD:moje programy/task_manager.cpp
         tasks.empty() && std::cout << "Brak zadan do wyswietlenia\n"; //"short hand if"
 
+=======
+        if(tasks.empty()) {std::cout << "Brak zadan do wyswietlenia.\n";}
+>>>>>>> c6e8263736602273e0ed1b0e749dc058a930668c:homelearning/moje programy/task_manager.cpp
         for (auto task : tasks) {
             std::cout << "[" << task.id << "] " << task.name << ":\n"
                       << task.desc << "\n" << "(Priorytet: " << task.priority
@@ -80,7 +84,7 @@ void displayMenu() {
                   << "Wybierz opcje: ";
 }
 
-main() {
+int main() {
     TaskManager manager;
     int choice = 0;
     
@@ -93,11 +97,21 @@ main() {
             std::string name;
             std::string desc;
             int priority;
+
+
             std::cout << "Podaj nazwe zadania: ";
+<<<<<<< HEAD:moje programy/task_manager.cpp
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Czyszczenie bufora wejściowego
+=======
+            //std::cin >> name;
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+>>>>>>> c6e8263736602273e0ed1b0e749dc058a930668c:homelearning/moje programy/task_manager.cpp
             std::getline(std::cin, name);
+
             std::cout << "Podaj opis zadania: ";
+
             std::getline(std::cin, desc);
+            
 
             while (true) {
             std::cout << "Podaj priorytet (0-3): ";

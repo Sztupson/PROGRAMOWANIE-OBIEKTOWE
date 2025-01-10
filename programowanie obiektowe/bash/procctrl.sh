@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 while true; 
 do
     echo    "Process Control: 
