@@ -27,7 +27,12 @@ public:
 
 
     void showTasks(){
+<<<<<<< HEAD:moje programy/task_manager.cpp
+        tasks.empty() && std::cout << "Brak zadan do wyswietlenia\n"; //"short hand if"
+
+=======
         if(tasks.empty()) {std::cout << "Brak zadan do wyswietlenia.\n";}
+>>>>>>> c6e8263736602273e0ed1b0e749dc058a930668c:homelearning/moje programy/task_manager.cpp
         for (auto task : tasks) {
             std::cout << "[" << task.id << "] " << task.name << ":\n"
                       << task.desc << "\n" << "(Priorytet: " << task.priority
@@ -43,19 +48,29 @@ public:
     // }   
 
 
-    void removeTask(unsigned int id){
-        if(id > 0 && id <= tasks.size()){
-            tasks.erase(tasks.begin() + (id-1));
-        } else { std::cout << "Niepoprawna wartosc ID.\n"; }
-    }
-    void taskCompletedMark(unsigned int id){
+    void removeTask(unsigned int id2){
+        if(id2<1 || id2 > tasks.size()) {std::cout << "Brak zadania o numerze ID: " << id2 << std::endl;}
         for(auto task : tasks) {
-            if(task.id == id) {
-                task.completion = true;
-                std::cout << "Ukonczono zadanie: " << task.name << ", o numerze id: " << task.id << std::endl;
+            if(task.id == id2){
+                tasks.erase(tasks.begin() + id2-1);
+                std::cout << "Usunieto zadanie: " << task.name << "\n";
             }
         }
-        std::cout << "Brak zadania o numerze ID: " << id << std::endl;
+
+
+        // if(id2 > 0 && id2 <= tasks.size()){
+        //     tasks.erase(tasks.begin() + (id2-1));
+        // } else { std::cout << "Niepoprawna wartosc ID.\n"; }
+    }
+    void taskCompletedMark(unsigned int id2){
+        for(auto task : tasks) {
+            if(task.id == id2) {
+                task.completion = true;
+                std::cout << "Ukonczono zadanie: " << task.name << ", o numerze id: " << task.id << std::endl;
+            } else {
+                std::cout << "Brak zadania o numerze ID: " << id2 << std::endl;
+            }
+        }  
     }
 };
 
@@ -85,8 +100,12 @@ int main() {
 
 
             std::cout << "Podaj nazwe zadania: ";
+<<<<<<< HEAD:moje programy/task_manager.cpp
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Czyszczenie bufora wejściowego
+=======
             //std::cin >> name;
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+>>>>>>> c6e8263736602273e0ed1b0e749dc058a930668c:homelearning/moje programy/task_manager.cpp
             std::getline(std::cin, name);
 
             std::cout << "Podaj opis zadania: ";
