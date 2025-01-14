@@ -63,7 +63,7 @@ int main(int argc, char* argv[]) {
         t.join();
     }
 
-    std::cout << "Stan liczników cyfr:\n";
+    std::cout << "Cyfry:\n";
     for (int i = 0; i < DIGIT_COUNT; ++i) {
         std::cout << "Cyfra " << i << ": " << ctx.count[i] << "\n";
     }
