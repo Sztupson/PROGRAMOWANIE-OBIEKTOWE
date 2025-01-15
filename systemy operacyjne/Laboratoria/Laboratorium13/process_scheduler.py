@@ -16,15 +16,12 @@ with open(sys.argv[1], newline='') as csvfile:
             'start': int(row['start'])
         })
 
-for i in queue:
-    print(queue[i])
 class Process:
     def __init__(self, name, length, start):
         self.name = name
         self.length = length
         self.start = start
     
-
 class RoundRobinScheduler:
     def __init__(self, kwantaCzasu, queue):
         self.kwantaCzasu = kwantaCzasu
@@ -32,5 +29,5 @@ class RoundRobinScheduler:
         self.running_queue = []
         
     def processing(self):
-        while self.queue | self.running_queue:
+        while self.queue or self.running_queue:
             pass
