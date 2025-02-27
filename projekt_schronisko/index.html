@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schronisko - Psy do adopcji</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Schronisko dla Zwierząt" class="logo" />
+        </div>
+        <h1>Schronisko dla Zwierząt</h1>
+        <nav>
+            <ul>
+                <li><a href="#adoptable">Psy do adopcji</a></li>
+                <li><a href="#add-dog">Dodaj psa</a></li>
+                <li><a href="#about-us">O nas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="adoptable">
+            <h2>Psy do adopcji</h2>
+            <div id="dog-list">
+                <!-- Lista psów będzie aktualizowana dynamicznie przez JavaScript -->
+            </div>
+        </section>
+
+        <section id="add-dog">
+            <h2>Dodaj psa do adopcji</h2>
+            <form id="add-dog-form">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="breed">Rasa:</label>
+                <input type="text" id="breed" name="breed" required>
+
+                <label for="age">Wiek:</label>
+                <input type="number" min="0" id="age" name="age" required>
+
+                <label for="image">Zdjęcie (URL):</label>
+                <input type="url" id="image" name="image" required>
+
+                <label for="description">Opis:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <button type="submit">Dodaj psa</button>
+            </form>
+        </section>
+
+        <section id="about-us">
+            <h2>O nas</h2>
+            <p>Jesteśmy schroniskiem, które od lat pomaga porzuconym i bezdomnym zwierzętom. Naszym celem jest zapewnienie psom i kotom godnych warunków życia oraz pomoc w znalezieniu nowych, odpowiedzialnych właścicieli. Z pasją i zaangażowaniem dbamy o każdą sierść, oferując im miłość i opiekę, jakiej potrzebują.</p>
+            <h3>Kontakt</h3>
+            <p>Numer telefonu: <strong>(+48) 123 456 789</strong></p>
+            <p>Email: <strong>kontakt@schronisko.pl</strong></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
