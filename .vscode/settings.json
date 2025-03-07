@@ -110,5 +110,6 @@
     "variant": "cpp",
     "iomanip": "cpp",
     "sstream": "cpp"
-  }
+  },
+  "bitoAI.codeCompletion.enableAutoCompletion": false
 }
