@@ -60,11 +60,13 @@ class Bar(Foo):
     def poly(self):
         print("Bar: poly")
 
+
 class XYZ:
     def xyz(self):
         print("XYZ: xyz")
     def poly(self):
         print("XYZ: poly")
+
 
 class Strange(Bar, XYZ):
     pass
@@ -77,18 +79,17 @@ def main():
     xyz = XYZ()
     s = Strange(1,3)
 
-    print("=========================\nBar:")
 
-    b.something_new()
-    b.use_me()
 
-    print("=========================\nStrange:")
+    f.poly()
+    b.poly()
 
-    s.something_new()
-    s.use_me()
-    s.xyz()
+    xyz.poly()
 
-    print("=========================")
+    collection = [f,b,xyz]
+    for e in collection:
+        print(type(e))
+        e.poly()
 
 
 if __name__ == '__main__':

@@ -79,16 +79,18 @@ def main():
     xyz = XYZ()
     s = Strange(1,3)
 
+    print("=========================\nBar:")
 
+    b.something_new()
+    b.use_me()
 
-    f.poly()
-    b.poly()
-    xyz.poly()
+    print("=========================\nStrange:")
 
-    collection = [f,Foo(b),xyz]
-    for e in collection:
-        print(type(e))
-        e.poly()
+    s.something_new()
+    s.use_me()
+    s.xyz()
+
+    print("=========================")
 
 
 if __name__ == '__main__':
