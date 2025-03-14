@@ -48,6 +48,7 @@ class Foo:
         self.attr2 = arg2
         self._attr_prot = 2 * arg1
         self.__attr_priv = 10 * arg1
+        
     def get_priv(self):
         return self.__attr_priv
 
