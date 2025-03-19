@@ -1,0 +1,11 @@
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\Nauczyciel Tabliczki Mnozenia\Nauczyciel Tabliczki Mnozenia\bin\Debug\Nauczyciel Tabliczki Mnozenia.exe.config
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\Nauczyciel Tabliczki Mnozenia\Nauczyciel Tabliczki Mnozenia\bin\Debug\Nauczyciel Tabliczki Mnozenia.exe
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\Nauczyciel Tabliczki Mnozenia\Nauczyciel Tabliczki Mnozenia\bin\Debug\Nauczyciel Tabliczki Mnozenia.pdb
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\Nauczyciel Tabliczki Mnozenia\Nauczyciel Tabliczki Mnozenia\obj\Debug\Nauczyciel Tabliczki Mnozenia.csproj.AssemblyReference.cache
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\Nauczyciel Tabliczki Mnozenia\Nauczyciel Tabliczki Mnozenia\obj\Debug\Nauczyciel Tabliczki Mnozenia.csproj.SuggestedBindingRedirects.cache
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\Nauczyciel Tabliczki Mnozenia\Nauczyciel Tabliczki Mnozenia\obj\Debug\Nauczyciel_Tabliczki_Mnozenia.Form1.resources
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\Nauczyciel Tabliczki Mnozenia\Nauczyciel Tabliczki Mnozenia\obj\Debug\Nauczyciel_Tabliczki_Mnozenia.Properties.Resources.resources
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\Nauczyciel Tabliczki Mnozenia\Nauczyciel Tabliczki Mnozenia\obj\Debug\Nauczyciel Tabliczki Mnozenia.csproj.GenerateResource.cache
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\Nauczyciel Tabliczki Mnozenia\Nauczyciel Tabliczki Mnozenia\obj\Debug\Nauczyciel Tabliczki Mnozenia.csproj.CoreCompileInputs.cache
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\Nauczyciel Tabliczki Mnozenia\Nauczyciel Tabliczki Mnozenia\obj\Debug\Nauczyciel Tabliczki Mnozenia.exe
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\Nauczyciel Tabliczki Mnozenia\Nauczyciel Tabliczki Mnozenia\obj\Debug\Nauczyciel Tabliczki Mnozenia.pdb
