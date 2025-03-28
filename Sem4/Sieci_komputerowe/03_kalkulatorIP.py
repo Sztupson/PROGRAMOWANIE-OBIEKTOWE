@@ -1,4 +1,4 @@
-addr =  "78.100.240.0/23"
+addr =  "192.168.48.0/26"
 addr = addr.split('/')
 
 ip = addr[0]

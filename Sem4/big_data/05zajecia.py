@@ -7,12 +7,14 @@ def generate_data(file_path, size,     max_value):
     with open(file_path, "w") as file_out:
         for i in range(size - 1):
             number = random.randint(0, max_value)
-            file_out.writelines(str(number) + "\n")
+            number2 = random.randint(0, max_value)
+            file_out.writelines(str(number) + ", " + str(number2) + "\n")
+            
             if i % 100_000 == 0:
                 print(f"{i} of {size}")
 
         number = random.randint(0, max_value)
-        file_out.writelines(str(number))
+        file_out.writelines(str(number) + ", " + str(number2))
 
 def divide_file(file_path, size, working_directory):
     with open(file_path, "r") as file_data:
@@ -233,10 +235,26 @@ def main():
     # print(f"Dzielenie: {end - begin} s")
     
     
-    count_numbers("Sem4/big_data/data.dat", "Sem4/big_data/data/7_1.dat")
-    print("------------------------")
-    sort_check("Sem4/big_data/data/7_1.dat")
+    # count_numbers("Sem4/big_data/data.dat", "Sem4/big_data/data/7_1.dat")
+    # print("------------------------")
+    # sort_check("Sem4/big_data/data/7_1.dat")
 
+    ##############################################################################3
+
+
+    generate_data("Sem4/big_data/data2.dat", 20,20)
+    
+    divide_file("Sem4/big_data/data.dat", 4, os.path.join(r"/home/u335779/Pulpit/repo/PROGRAMOWANIE-OBIEKTOWE/Sem4/big_data/data"))
+    end = timer()
+    print(f"Dzielenie: {end- begin}")
+    begin = timer()
+    sort_data_in_directory(r"/home/u335779/Pulpit/repo/PROGRAMOWANIE-OBIEKTOWE/Sem4/big_data/data")
+    end = timer()
+    print(f"Sortowanie: {end-begin}")
+    begin = timer()
+    merge_all_files(r"/home/u335779/Pulpit/repo/PROGRAMOWANIE-OBIEKTOWE/Sem4/big_data/data")
+    end = timer()
+    print(f"Dzielenie: {end - begin} s")
 
 
 if __name__ == "__main__":

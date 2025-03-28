@@ -1,0 +1,40 @@
+Polecenie instalacji serwera DHCP:
+sudo apt install isc-dhcp-server
+
+Konfiguracja interfejsu sieciowego:
+a. ip a - aby sprawdzic karte sieciowa - enp0s31f6
+        wylaczenie: sudo ip link set enp0s31f6 down
+b. sudo ip addr add 10.123.10.1/24 dev enp0s31f6
+c. sudo ip link set enp0s31f6 up
+d. sudo ip route add default via 10.123.10.254
+e. echo "nameserver 1.1.1.1" | sudo tee /etc/resolv.conf
+        sudo netplan apply
+
+Konfiguracja serwera DHCP (plik conf):
+subnet 10.123.X.0 netmask 255.255.255.0 {
+    range 10.123.X.100 10.123.X.200;
+    option routers 10.123.X.1;
+    option domain-name-servers 1.1.1.1;
+    default-lease-time 600;
+    max-lease-time 7200;
+}
+
+Polecenie do uruchomienia serwera DHCP przez systemd:
+sudo nano /etc/dhcp/dhcpd.conf
+
+
+Polecenie do wypisania logów serwera DHCP:
+…
+
+Polecenia do sprawdzenia przydzielonych adresów na komputerze klienckim:
+ip addr show
+ip route show
+dhclient -v
+
+Adres IP przydzielony przed zmianą MAC:
+10.123.X.Y
+
+Adres IP przydzielony po zmianie MAC:
+
+
+10.123.X.Z (wpisz uzyskany adres)
