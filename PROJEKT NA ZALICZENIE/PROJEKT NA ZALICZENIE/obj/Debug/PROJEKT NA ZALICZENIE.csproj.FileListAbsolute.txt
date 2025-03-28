@@ -1,0 +1,14 @@
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PROJEKT NA ZALICZENIE\PROJEKT NA ZALICZENIE\obj\Debug\PROJEKT NA ZALICZENIE.csproj.AssemblyReference.cache
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PROJEKT NA ZALICZENIE\PROJEKT NA ZALICZENIE\obj\Debug\PROJEKT NA ZALICZENIE.csproj.SuggestedBindingRedirects.cache
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PROJEKT NA ZALICZENIE\PROJEKT NA ZALICZENIE\obj\Debug\PROJEKT_NA_ZALICZENIE.Form1.resources
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PROJEKT NA ZALICZENIE\PROJEKT NA ZALICZENIE\obj\Debug\PROJEKT_NA_ZALICZENIE.Properties.Resources.resources
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PROJEKT NA ZALICZENIE\PROJEKT NA ZALICZENIE\obj\Debug\PROJEKT NA ZALICZENIE.csproj.GenerateResource.cache
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PROJEKT NA ZALICZENIE\PROJEKT NA ZALICZENIE\obj\Debug\PROJEKT NA ZALICZENIE.csproj.CoreCompileInputs.cache
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PROJEKT NA ZALICZENIE\PROJEKT NA ZALICZENIE\bin\Debug\PROJEKT NA ZALICZENIE.exe.config
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PROJEKT NA ZALICZENIE\PROJEKT NA ZALICZENIE\bin\Debug\PROJEKT NA ZALICZENIE.exe
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PROJEKT NA ZALICZENIE\PROJEKT NA ZALICZENIE\bin\Debug\PROJEKT NA ZALICZENIE.pdb
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PROJEKT NA ZALICZENIE\PROJEKT NA ZALICZENIE\bin\Debug\Newtonsoft.Json.dll
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PROJEKT NA ZALICZENIE\PROJEKT NA ZALICZENIE\bin\Debug\Newtonsoft.Json.xml
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PROJEKT NA ZALICZENIE\PROJEKT NA ZALICZENIE\obj\Debug\PROJEKT NA ZALICZENIE.csproj.CopyComplete
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PROJEKT NA ZALICZENIE\PROJEKT NA ZALICZENIE\obj\Debug\PROJEKT NA ZALICZENIE.exe
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PROJEKT NA ZALICZENIE\PROJEKT NA ZALICZENIE\obj\Debug\PROJEKT NA ZALICZENIE.pdb
