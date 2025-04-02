@@ -1,0 +1,6 @@
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\matematyka\bin\Debug\matematyka.dll
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\matematyka\bin\Debug\matematyka.pdb
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\matematyka\obj\Debug\matematyka.csproj.AssemblyReference.cache
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\matematyka\obj\Debug\matematyka.csproj.CoreCompileInputs.cache
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\matematyka\obj\Debug\matematyka.dll
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\matematyka\obj\Debug\matematyka.pdb

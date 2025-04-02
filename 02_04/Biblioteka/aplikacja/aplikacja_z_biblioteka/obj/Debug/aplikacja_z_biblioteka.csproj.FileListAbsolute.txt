@@ -1,0 +1,14 @@
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\aplikacja\aplikacja_z_biblioteka\bin\Debug\aplikacja_z_biblioteka.exe.config
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\aplikacja\aplikacja_z_biblioteka\bin\Debug\aplikacja_z_biblioteka.exe
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\aplikacja\aplikacja_z_biblioteka\bin\Debug\aplikacja_z_biblioteka.pdb
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\aplikacja\aplikacja_z_biblioteka\bin\Debug\matematyka.dll
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\aplikacja\aplikacja_z_biblioteka\bin\Debug\matematyka.pdb
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\aplikacja\aplikacja_z_biblioteka\obj\Debug\aplikacja_z_biblioteka.csproj.AssemblyReference.cache
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\aplikacja\aplikacja_z_biblioteka\obj\Debug\aplikacja_z_biblioteka.csproj.SuggestedBindingRedirects.cache
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\aplikacja\aplikacja_z_biblioteka\obj\Debug\aplikacja_z_biblioteka.Form1.resources
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\aplikacja\aplikacja_z_biblioteka\obj\Debug\aplikacja_z_biblioteka.Properties.Resources.resources
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\aplikacja\aplikacja_z_biblioteka\obj\Debug\aplikacja_z_biblioteka.csproj.GenerateResource.cache
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\aplikacja\aplikacja_z_biblioteka\obj\Debug\aplikacja_z_biblioteka.csproj.CoreCompileInputs.cache
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\aplikacja\aplikacja_z_biblioteka\obj\Debug\aplikacja_z_biblioteka.csproj.CopyComplete
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\aplikacja\aplikacja_z_biblioteka\obj\Debug\aplikacja_z_biblioteka.exe
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\Biblioteka\aplikacja\aplikacja_z_biblioteka\obj\Debug\aplikacja_z_biblioteka.pdb

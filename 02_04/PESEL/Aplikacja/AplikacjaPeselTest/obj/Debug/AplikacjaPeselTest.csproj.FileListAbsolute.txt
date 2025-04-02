@@ -1,0 +1,14 @@
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\PESEL\Aplikacja\AplikacjaPeselTest\bin\Debug\AplikacjaPeselTest.exe.config
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\PESEL\Aplikacja\AplikacjaPeselTest\bin\Debug\AplikacjaPeselTest.exe
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\PESEL\Aplikacja\AplikacjaPeselTest\bin\Debug\AplikacjaPeselTest.pdb
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\PESEL\Aplikacja\AplikacjaPeselTest\bin\Debug\PESEL.dll
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\PESEL\Aplikacja\AplikacjaPeselTest\bin\Debug\PESEL.pdb
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\PESEL\Aplikacja\AplikacjaPeselTest\obj\Debug\AplikacjaPeselTest.csproj.AssemblyReference.cache
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\PESEL\Aplikacja\AplikacjaPeselTest\obj\Debug\AplikacjaPeselTest.csproj.SuggestedBindingRedirects.cache
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\PESEL\Aplikacja\AplikacjaPeselTest\obj\Debug\AplikacjaPeselTest.Form1.resources
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\PESEL\Aplikacja\AplikacjaPeselTest\obj\Debug\AplikacjaPeselTest.Properties.Resources.resources
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\PESEL\Aplikacja\AplikacjaPeselTest\obj\Debug\AplikacjaPeselTest.csproj.GenerateResource.cache
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\PESEL\Aplikacja\AplikacjaPeselTest\obj\Debug\AplikacjaPeselTest.csproj.CoreCompileInputs.cache
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\PESEL\Aplikacja\AplikacjaPeselTest\obj\Debug\AplikacjaPeselTest.csproj.CopyComplete
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\PESEL\Aplikacja\AplikacjaPeselTest\obj\Debug\AplikacjaPeselTest.exe
+\\eos\STUDENTs$\335779\DOCUMENTS\02_04\PESEL\Aplikacja\AplikacjaPeselTest\obj\Debug\AplikacjaPeselTest.pdb
