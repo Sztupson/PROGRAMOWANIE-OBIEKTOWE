@@ -544,7 +544,7 @@ def main():
     print(f"time: {end - begin} s")
     #count_numbers_in_file("Sem4/big_data/data.dat")
     #count_numbers_in_directory("/home/u335779/Pulpit/repo/PROGRAMOWANIE-OBIEKTOWE/Sem4/big_data/data")
-    sort_check("/home/u335779/Pulpit/repo/PROGRAMOWANIE-OBIEKTOWE/Sem4/big_data/data")
-    compare_number_counts("Sem4/big_data/data.dat", "/home/u335779/Pulpit/repo/PROGRAMOWANIE-OBIEKTOWE/Sem4/big_data/data")
+    # sort_check("/home/u335779/Pulpit/repo/PROGRAMOWANIE-OBIEKTOWE/Sem4/big_data/data")
+    # compare_number_counts("Sem4/big_data/data.dat", "/home/u335779/Pulpit/repo/PROGRAMOWANIE-OBIEKTOWE/Sem4/big_data/data")
 if __name__ == "__main__":
     main() 
