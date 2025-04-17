@@ -75,7 +75,7 @@ def fill_all_photos(dir_out):
     for file in files:
         file_path = os.path.join(path_with_photos, file)
         file_path_out = os.path.join(dir_out, f"nr{c}-{file}")
-        photo = threading.Thread(target = fill_og_with_small, args=(file_path, file_path_out, 30, 4000, 2000, "dzepetto.png" ))
+        photo = threading.Thread(target = fill_og_with_small, args=(file_path, file_path_out, 20, 2048, 2048, "grzesiu.png" ))
         photos.append(photo)
         photo.start()
         c += 1
