@@ -1,0 +1,16 @@
+\\eos\TEACHERS$\pankowskia\Documents\02_04\PESEL\PESEL\bin\Debug\PESEL.dll
+\\eos\TEACHERS$\pankowskia\Documents\02_04\PESEL\PESEL\bin\Debug\PESEL.pdb
+\\eos\TEACHERS$\pankowskia\Documents\02_04\PESEL\PESEL\obj\Debug\PESEL.csproj.AssemblyReference.cache
+\\eos\TEACHERS$\pankowskia\Documents\02_04\PESEL\PESEL\obj\Debug\PESEL.csproj.CoreCompileInputs.cache
+\\eos\TEACHERS$\pankowskia\Documents\02_04\PESEL\PESEL\obj\Debug\PESEL.dll
+\\eos\TEACHERS$\pankowskia\Documents\02_04\PESEL\PESEL\obj\Debug\PESEL.pdb
+\\eos\TEACHERS$\pankowskia\Documents\02_04\PESEL\PESEL\obj\Debug\PESEL.pesel.resources
+\\eos\TEACHERS$\pankowskia\Documents\02_04\PESEL\PESEL\obj\Debug\PESEL.csproj.GenerateResource.cache
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PESEL\PESEL\bin\Debug\PESEL.dll
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PESEL\PESEL\bin\Debug\PESEL.pdb
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PESEL\PESEL\obj\Debug\PESEL.csproj.AssemblyReference.cache
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PESEL\PESEL\obj\Debug\PESEL.pesel.resources
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PESEL\PESEL\obj\Debug\PESEL.csproj.GenerateResource.cache
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PESEL\PESEL\obj\Debug\PESEL.csproj.CoreCompileInputs.cache
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PESEL\PESEL\obj\Debug\PESEL.dll
+\\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\PESEL\PESEL\obj\Debug\PESEL.pdb
