@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PESEL", "PESEL.csproj", "{EA1BCD8B-1986-413B-A9FF-0596A2595B15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AplikacjaPeselTest", "..\Aplikacja\AplikacjaPeselTest\AplikacjaPeselTest.csproj", "{155024B9-0119-46C5-9230-310EABC24E0B}"
+EndProject
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "WalidacjaPESEL", "..\..\WalidacjaPESEL\WalidacjaPESEL\bin\Debug\WalidacjaPESEL.exe", "{E69ECFF3-0484-4961-9ED9-8E72F1E4B4C4}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = \\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\WalidacjaPESEL\WalidacjaPESEL\bin\Debug\WalidacjaPESEL.exe
+		RemoteMachine = S36-0231
+		StartingDirectory = \\eos\STUDENTs$\335779\Desktop\Projekty visual studio 2022\WalidacjaPESEL\WalidacjaPESEL\bin\Debug
+		Environment = Domyślne
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+		IORedirection = Auto
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA1BCD8B-1986-413B-A9FF-0596A2595B15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA1BCD8B-1986-413B-A9FF-0596A2595B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA1BCD8B-1986-413B-A9FF-0596A2595B15}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EA1BCD8B-1986-413B-A9FF-0596A2595B15}.Debug|x86.Build.0 = Debug|Any CPU
+		{EA1BCD8B-1986-413B-A9FF-0596A2595B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA1BCD8B-1986-413B-A9FF-0596A2595B15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA1BCD8B-1986-413B-A9FF-0596A2595B15}.Release|x86.ActiveCfg = Release|Any CPU
+		{EA1BCD8B-1986-413B-A9FF-0596A2595B15}.Release|x86.Build.0 = Release|Any CPU
+		{155024B9-0119-46C5-9230-310EABC24E0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{155024B9-0119-46C5-9230-310EABC24E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{155024B9-0119-46C5-9230-310EABC24E0B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{155024B9-0119-46C5-9230-310EABC24E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{155024B9-0119-46C5-9230-310EABC24E0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{155024B9-0119-46C5-9230-310EABC24E0B}.Release|x86.ActiveCfg = Release|Any CPU
+		{E69ECFF3-0484-4961-9ED9-8E72F1E4B4C4}.Debug|Any CPU.ActiveCfg = Release|x86
+		{E69ECFF3-0484-4961-9ED9-8E72F1E4B4C4}.Debug|x86.ActiveCfg = Release|x86
+		{E69ECFF3-0484-4961-9ED9-8E72F1E4B4C4}.Release|Any CPU.ActiveCfg = Release|x86
+		{E69ECFF3-0484-4961-9ED9-8E72F1E4B4C4}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {05766FA2-360D-4590-8F82-402E18F91B62}
+	EndGlobalSection
+EndGlobal
