@@ -96,6 +96,11 @@ int main() {
     RepeatPlayback repeat;
     ShufflePlayback shuffle;
 
+    std::cout << "\nZmiana trybu na Shuffle:\n";
+    player->setStrategy(&shuffle);
+    player->next();
+    player->next();
+
     player->setStrategy(&normal);
     player->play();
     player->next();
@@ -106,10 +111,8 @@ int main() {
     player->next();
     player->next();
 
-    std::cout << "\nZmiana trybu na Shuffle:\n";
-    player->setStrategy(&shuffle);
-    player->next();
-    player->next();
+    
+
 
     return 0;
 }

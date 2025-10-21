@@ -109,7 +109,16 @@
     "typeinfo": "cpp",
     "variant": "cpp",
     "iomanip": "cpp",
-    "sstream": "cpp"
+    "sstream": "cpp",
+    "condition_variable": "cpp",
+    "cstring": "cpp",
+    "set": "cpp",
+    "ratio": "cpp",
+    "fstream": "cpp",
+    "mutex": "cpp",
+    "semaphore": "cpp",
+    "stop_token": "cpp",
+    "thread": "cpp"
   },
   "bitoAI.codeCompletion.enableAutoCompletion": false
 }
