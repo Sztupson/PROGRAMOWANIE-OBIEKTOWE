@@ -96,11 +96,14 @@ int main() {
     RepeatPlayback repeat;
     ShufflePlayback shuffle;
 
+<<<<<<< HEAD
     std::cout << "\nZmiana trybu na Shuffle:\n";
     player->setStrategy(&shuffle);
     player->next();
     player->next();
 
+=======
+>>>>>>> 77effad7dbca26e1f9d827d6cb9d6f1f3cd04e19
     player->setStrategy(&normal);
     player->play();
     player->next();
@@ -111,8 +114,15 @@ int main() {
     player->next();
     player->next();
 
+<<<<<<< HEAD
     
 
+=======
+    std::cout << "\nZmiana trybu na Shuffle:\n";
+    player->setStrategy(&shuffle);
+    player->next();
+    player->next();
+>>>>>>> 77effad7dbca26e1f9d827d6cb9d6f1f3cd04e19
 
     return 0;
 }

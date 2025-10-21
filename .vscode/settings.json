@@ -109,6 +109,7 @@
     "typeinfo": "cpp",
     "variant": "cpp",
     "iomanip": "cpp",
+<<<<<<< HEAD
     "sstream": "cpp",
     "condition_variable": "cpp",
     "cstring": "cpp",
@@ -119,6 +120,9 @@
     "semaphore": "cpp",
     "stop_token": "cpp",
     "thread": "cpp"
+=======
+    "sstream": "cpp"
+>>>>>>> 77effad7dbca26e1f9d827d6cb9d6f1f3cd04e19
   },
   "bitoAI.codeCompletion.enableAutoCompletion": false
 }
